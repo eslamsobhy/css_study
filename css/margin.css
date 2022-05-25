@@ -1,0 +1,31 @@
+div{
+    background-color: #ddd;
+
+
+
+    /* margin: top&bottom right&left; */
+    margin: 20px 40px;
+
+    /* SAME AS.. */
+
+    /* margin: top right  bottom left; */
+    margin: 20px 40px 20px 40px;
+
+    /* SAME AS.. */
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+
+    /* margin could accept -ve values */
+
+    margin-top: -30px;
+
+    /* automatic centering */
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+     /* SAME AS.. */
+    margin: auto; /*but with the height too!*/
+}
