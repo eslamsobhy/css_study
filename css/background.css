@@ -1,0 +1,20 @@
+/* 
+background-color: #hexa or rgb();
+background-image: url();
+background-repeat: default(repeat);
+background-attachment: default(scroll);
+background-position: default(left top); we can customize the position using pixels or percentage
+background-size: default(auto) as it is with its default size
+*/
+
+div{
+    background-color: #e28d3e;
+    color: aliceblue;
+    background-image: url("../images/rotana.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left center;
+    background-size: contain;
+    /* with cover value for the size, the size could be streched or cropped */
+    
+}
