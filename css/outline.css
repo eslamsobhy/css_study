@@ -1,0 +1,14 @@
+div{
+    background-color: #ddd;
+    width: 300px;
+    padding: 10px;
+    border: 10px solid red;
+    
+    /*it is not considered as member of the parent element*/
+    /* it is out side of the element and its width is not calculated with the side of the parent element */
+    outline: 10px solid green;
+
+    /* cannot do a raduis for the outline. */
+    /* the outline property does not allow us to control the out line for the FOUR edges */
+    /* after adding the box-sizing property the outline property is no longer used, because it made the size of the border is no longer calculated either. */
+}
