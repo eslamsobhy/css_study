@@ -1,0 +1,69 @@
+/* INSTEAD OF: */
+
+.one{
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #ddd;
+    color: red;
+    border-bottom: 2px solid red;
+    width: 250px;
+}
+
+.two{
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #ddd;
+    width: 250px;
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+.three{
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #ddd;
+    width: 250px;
+    color: green;
+    border-bottom: 2px solid green;
+}
+
+.four{
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #ddd;
+    width: 250px;
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+
+/* WE USE THIS */
+
+.one{
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.two{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+.three{
+    color: green;
+    border-bottom: 2px solid green;
+}
+
+.four{
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+
+.one, 
+.two,
+.three,
+.four{
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #ddd;
+    width: 300px;
+}
