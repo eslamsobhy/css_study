@@ -1,0 +1,16 @@
+p{
+    margin: 15px auto;
+    padding: 15px;
+    text-align: center;
+    color: violet;
+    background-color: #ddd;
+    border-bottom: 2px solid violet;
+    width: 300px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+div p{
+    color: #19027c;
+    border-bottom: 2px solid #19027c;
+}
