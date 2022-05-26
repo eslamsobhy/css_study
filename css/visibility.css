@@ -1,0 +1,14 @@
+div{
+    background-color: red;
+    margin: 10px 0;
+}
+
+.first{
+    visibility: hidden;
+    /*display: none;*/ /*The element is not there anymore!*/
+}
+
+.second{
+    /* default value: visible */
+    visibility: hidden; /* the element is just hidden*/
+}
