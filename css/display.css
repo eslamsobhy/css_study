@@ -1,0 +1,45 @@
+/* 
+    Block
+    
+    - Takes the full width in no width specified.
+    - Adds line break.
+    - Respects the padding, margin, width, height and ...
+   
+    Inline
+
+    - Takes its width only.
+    - Does not add line break.
+    - Does not respect width and height BUT respects padding and margin(Just left and right).
+    -Allows elements before and after it.
+
+    Inline-Block
+
+    - Allows elements before and after it.
+    - Respects the padding, margin, width, height and ...
+    - 
+*/
+
+div{
+    background-color: #DDD;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*
+span{
+    background-color: #DDD;
+    width: 50px;
+    height: 30px;
+    padding: 10px;
+    margin: 50px;
+}
+*/
+
+span{
+    background-color: #DDD;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+    width: 150px;
+    height: 50px;
+}
