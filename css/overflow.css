@@ -1,0 +1,15 @@
+div{
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    margin: 20px auto;
+    border-radius: 6px;
+
+    /* overflow: default value (visible); */
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+
+    /* we can control the x(horizontal) and y(vertical) overflow */
+    overflow-x: hidden;
+}
