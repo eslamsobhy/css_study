@@ -1,0 +1,53 @@
+/* 
+    Text color
+    -background-color
+    -color
+
+    Text shadow
+    Syntax => text-shadow: H-shadow V-shadow Blur Color
+
+    Text alignment
+    direction
+    vertical alignment
+
+    Text decoration
+    Text transformation
+
+    Text spacing + wraping + white spaces
+
+    text overflow
+
+*/
+
+div{
+    width: 150px;
+    background-color: #ddd;
+    color: steelblue;
+    text-shadow: 2px 2px 2px #ff0000;
+    text-align: center; /*controls the alignment of the element with its direction*/
+    direction: ltr; /*default: ltr*/
+    text-decoration: line-through; /*underline, overline*/
+    text-transform: uppercase;/*capetalize, lowercase,...*/
+    letter-spacing: 2px; /*spaces between letters*/
+    text-indent: 10px; /*spaces before the text*/
+    line-height: 1.6; /*vertical spaces between lines for readability*/
+    word-spacing: 7px; /*spaces between words*/ 
+    white-space: nowrap; /*for the words getting outside the box width*//*nowrap value makes the words separated by spaces OVERFLOW*/
+    word-break: break-all; /*for breaking the line to avoid exceeding the specified width (to avoid overflow)*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a{
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none; /*more used here*/
+}
+img{
+    vertical-align: middle;
+    /* where is the text wrt the image */
+}
