@@ -1,0 +1,16 @@
+span,
+button{
+    cursor: pointer;
+}
+
+p{
+    cursor: move;
+}
+
+p:first-child{
+    cursor: grab;
+}
+
+p:last-child{
+    cursor: help;
+}
