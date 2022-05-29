@@ -1,0 +1,13 @@
+.container{
+    background-color: black;
+    opacity: 0.5;
+    height: 900px;
+}
+
+.content{
+    color: black;
+    width: 300px;
+    background-color: #ddd;
+    text-align: center;
+    margin: 0 auto;
+}
