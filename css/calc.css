@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+
+div{
+    cursor: pointer;
+    background-color: #eee;
+    padding: 10px 0;
+    text-align: center;
+    margin-left: 10px;
+    float: left;
+    width: calc((100% - 60px)/5);
+}
+
+/* 
+    content width = 100%
+    6 spaces = 10px * 6 = 60px
+    6 spaces for five elements..
+    available width = 100% - 60px
+    the width per product = (100% - 60px) / 5
+*/
