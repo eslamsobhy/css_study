@@ -1,0 +1,65 @@
+/* 
+    PSEUDO CLASSES:
+    - hover
+    - visited
+    - link
+    - active
+    - checked
+    - empty
+    - focus
+
+*/
+
+.one {
+    background-color: red;
+    color: white;
+}
+
+.two {
+    background-color: #eee;
+    width: 150px;
+    height: 150px;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: orange;
+}
+
+.check:checked + label{
+    color: red;
+}
+
+label:hover {
+    display: none;
+}
+
+/* To target all the empty elements in the page */
+/*
+:empty{
+
+}
+*/
+
+div:empty {
+    border: 2px solid #ff0000;
+}
+
+.in{
+    border: 2px solid black;
+    transition: all 0.4s;
+}
+
+.in:focus {
+    outline: none;
+    border-color: yellowgreen;
+}
