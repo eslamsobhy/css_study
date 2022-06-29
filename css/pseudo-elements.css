@@ -1,0 +1,151 @@
+/* 
+    PSEUDO ELEMENTS:
+    - use two colons (::) but pseudo classes use one colon (:)
+
+    - first-line
+    - first-letter
+    - selection
+    - before
+    - after
+    - content
+        - string
+        - shape
+        - counter()
+        - attr(): attribute (already specified in the html)
+        - url()
+        - can change the list type inside the ul using before
+
+*/
+
+.one span {
+    background-color: red;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.two::first-letter {
+    background-color: red;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.three::first-line {
+    font-weight: bold;
+    color: green;
+}
+
+.four::selection {
+    background-color: black !important;
+    color: yellow !important;
+}
+
+/* 
+--------------------------------------------
+--------------------------------------------
+*/
+
+hr {
+    margin: 20px 0;
+}
+
+.parent {
+    margin-bottom: 20px;
+    overflow: hidden;
+    counter-increment: count; /* to count the elements inside the parent */
+}
+
+.user {
+    background-color: #eee;
+    width: 50px;
+    margin-right: 20px;
+    height: 55.5px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+}
+
+.onee {
+    position: relative;
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    float: left;
+}
+
+.onee::before {
+    content: "";
+    width: 0;
+    height: 0;
+    /* background-color: white; */
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #009688 transparent transparent;
+}
+
+
+.onee::after {
+    content: counter(count);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    right: -10px;
+    top: 50%;
+    margin-top: -10px;
+
+    /* content: ""; */
+    /* 
+    
+    width: 5px;
+    height: 100%;
+    right: -8px;
+    top: 0;
+    background-color: #009688; 
+    
+    */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

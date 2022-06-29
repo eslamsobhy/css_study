@@ -50,6 +50,6 @@ div{
     NOTE: 
     If we have two elements inside each others
     and we want one element to move inside that parent element,
-    we have to make the parent relative,
-    and the son absolute and give it its dimensions.
+    we have to make the parent 'relative',
+    and the son 'absolute' and give it its dimensions.
 */
