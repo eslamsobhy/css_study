@@ -1,0 +1,40 @@
+/* 
+    Vendors prefixes:
+    - chrome
+    - Safari
+    - firefox
+    - IE, Edge
+    - Opera
+    - ...
+
+    *SCENARIO
+    [1] New css feature appeared
+    [2] Browsers tests the feature in version x
+    [3] Browsers add prefix to give the developers the oppportunity to use it
+    [4] The feature is fully supported in version y, no need for prefix
+
+
+    -webkit- => Chrome, Safari, new Opera versions
+    -moz-    => Mozila Firefox
+    -ms-     => IE, Edge
+    -o-      => older versions of Opera
+
+    If all the browsers supports the property, then we no longer need to use vendors prefixes.
+    we can check if it is supported or not using:
+    - Can I Use website
+
+*/
+
+.class{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* 
+    [1] Most of users use modern browsers.
+    [2] VS Code has addons to add prefixes.
+    [3] Task runners help us write the prefixes automatically.
+*/
