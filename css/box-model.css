@@ -1,0 +1,30 @@
+/* 
+    The box model
+    Box sizing: default value => content-box
+*/
+
+/* To include the property for all the elements */
+* {
+    box-sizing: border-box;
+}
+
+.parent{
+    width: 600px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+.one{
+    background-color: #eee;
+    width: 300px;
+    float: left;
+    padding: 10px;
+
+    /* The margin property is not included!*/
+    /* margin: 10px; */ 
+
+    border: 10px solid #000;
+    box-sizing: border-box;
+}
