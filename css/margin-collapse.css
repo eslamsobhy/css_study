@@ -1,0 +1,50 @@
+/* 
+    The margin collapse:
+        [1] ONLY vertical margin collapse.
+        [2] If one has a bigger margin than the other, the bigger WINS.
+        [3] Margin collapse works only if no elements in between
+        [4] Nesting does not affect the margin collapsing 
+            BUT only if the element does not have styling.
+*/
+
+
+.parent {
+    overflow: hidden;
+    width: 400px;
+    height: 200px;
+    margin:auto;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.parent .one,
+.parent .two {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.one {
+    background-color: #ddd;
+}
+
+.two {
+    background-color: #aaa;
+}
+
+/* Nesting will affect the margin collapse if the parent has styling */
+/* .test {
+    margin: 20px auto;
+} */
+
+.two .up {
+    background-color: red;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.two .down {
+    background-color: green;
+    height: 90px;
+    margin-top: 20px;
+}
