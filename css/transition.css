@@ -1,0 +1,27 @@
+/* 
+    Short hand: property | duration | timing function | delay
+
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.one {
+    background-color: #eee;
+    width: 200px;
+    height: 100px;
+    /* transition-duration: 1s;
+    transition-delay: 0.1s;
+    transition-property: margin-left, margin-top;
+    transition-timing-function: ease-in-out; */
+
+    transition: margin-left 1s ease-in-out 0.1s, margin-top 1s ease-in-out 0.1s;
+}
+
+.one:hover {
+    margin-left: 40px;
+    margin-top: 40px;
+}
