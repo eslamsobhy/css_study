@@ -1,6 +1,6 @@
 /* 
     Short hand: property | duration | timing function | delay
-
+    The !important declaration
 */
 
 * {
@@ -10,7 +10,8 @@
 }
 
 .one {
-    background-color: #eee;
+    /* The styling here is applied because of the !important flag */
+    background-color: #eee !important; 
     width: 200px;
     height: 100px;
     /* transition-duration: 1s;

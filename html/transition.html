@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/transition.css">
-    <title>Transition</title>
+    <title>Transition and !important</title>
 </head>
 <body>
-    <div class="one">One</div>
+    <!-- The styling here is ignored,
+         because of the !important flag in the css on that property -->
+    <div class="one" style="background-color: red;">One</div>
 </body>
 </html>
