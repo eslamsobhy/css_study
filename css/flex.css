@@ -2,7 +2,10 @@
     Flexible Box
     For Parent:
         - display: flex => to start flexible box
-
+        - flex-direction => default value: row, row-reverse, column, column-reverse
+        - flex-wrap => default value: nowrap, wrap, wrap-reverse
+        short hand for the (flex-wrap - flex direction): 
+        - flex-flow => 
 */
 
 * {
@@ -10,17 +13,19 @@
 }
 
 .flex {
-    overflow: hidden;
     background-color: #eee;
     width: 600px;
     padding: 20px;
     margin: 20px auto;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap-reverse; */
+    flex-flow: row wrap-reverse;
 }
 
 .flex div {
     background-color: #f00;
     color: white;
-    float: left;
     width: 25%;
     text-align: center;
     padding: 20px;
