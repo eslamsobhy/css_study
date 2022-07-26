@@ -1,0 +1,44 @@
+/* 
+    Flexible Box
+    For Parent:
+        - display: flex => to start flexible box
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    overflow: hidden;
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.flex div {
+    background-color: #f00;
+    color: white;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+.float {
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.float div {
+    width: 25%;
+    background-color: #f00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    float: left;
+}
