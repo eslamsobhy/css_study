@@ -9,6 +9,12 @@
         --------------------------------------
         - justify-content (horizontal dealing) => default value: flex-start, flex-end, center, space-between, space-around, space-evenly
         - align-items (vertical dealing) => default value: stretch, flex-start, flex-end, center
+        - align-content => default value: stretch, flex-start, flex-end, space-around, space-between, space-evenly, ...
+
+        (align-items) => deals with the items as separated items
+        (align-content) => deals with the whole content as one block
+
+
 */
 
 * {
@@ -18,14 +24,16 @@
 .flex {
     background-color: #eee;
     width: 600px;
+    height: 400px;
     padding: 20px;
     margin: 20px auto;
     display: flex;
+    flex-wrap: wrap;
     /* flex-direction: row;
     flex-wrap: wrap-reverse; */
     /* flex-flow: row wrap; */
     /* justify-content: space-evenly; */
-    align-items: center;
+    align-content: space-between;
 }
 
 .flex div {
@@ -58,13 +66,13 @@
     margin-right: 1%;
 } */
 
-.one {
+/* .one {
     height: 80px;
 }
 
 .two {
     height: 120px;
-}
+} */
 
 .center {
     background-color: black;
