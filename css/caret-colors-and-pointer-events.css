@@ -1,0 +1,9 @@
+
+
+p, input {
+    caret-color: orange;
+}
+
+a:hover {
+    pointer-events: none;
+}
