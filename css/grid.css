@@ -1,0 +1,30 @@
+/* 
+    Grid
+    ----
+    Parent
+    - display: grid | inline-grid
+    - grid-template-columns: number of colums in => [px, %, auto, fraction, repeat(), Mix]
+        fraction is gready but auto is shy!
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: auto auto 1fr 1fr;
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
