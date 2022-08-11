@@ -3,8 +3,11 @@
     ----
     Parent
     - display: grid | inline-grid
-    - grid-template-columns: number of colums in => [px, %, auto, fraction, repeat(), Mix]
+    - grid-template-columns: number of colums (width) in => [px, %, auto, fraction, repeat(), Mix]
         fraction is gready but auto is shy!
+    - grid-template-rows: number of rows (height) in => [px, %, auto, fraction, repeat(), Mix]
+    - gap: [row gap] [column gap]
+
 */
 
 * {
@@ -17,7 +20,11 @@
     height: 500px;
     background-color: #eee;
     display: grid;
-    grid-template-columns: auto auto 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    /* gap: 20px; */
 }
 
 .parent div {
