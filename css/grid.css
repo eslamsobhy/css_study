@@ -3,10 +3,11 @@
     ----
     Parent
     - display: grid | inline-grid
-    - grid-template-columns: number of colums (width) in => [px, %, auto, fraction, repeat(), Mix]
+    - grid-template-columns: number of columns (width) in => [px, %, auto, fraction, repeat(), Mix]
         fraction is gready but auto is shy!
     - grid-template-rows: number of rows (height) in => [px, %, auto, fraction, repeat(), Mix]
     - gap: [row gap] [column gap]
+    - justify-content: [flex-start, flex-end, center, space-between, space-around, space-evenly]
 
 */
 
@@ -20,11 +21,12 @@
     height: 500px;
     background-color: #eee;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
     row-gap: 20px;
     column-gap: 20px;
     /* gap: 20px; */
+    justify-content: space-evenly;
 }
 
 .parent div {
@@ -35,3 +37,13 @@
     font-weight: bold;
     text-align: center;
 }
+
+
+/* 
+    differences between fraction and auto:
+        auto will fill the entire area as long as there is no constraint to
+        avoid it, but once there is any constraint it will fill the minimum area
+        its element can live in..
+        ( By constraint we mean something that has the priority to fill the area
+        like (fr) or justify-content property used! )
+*/
