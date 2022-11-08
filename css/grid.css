@@ -26,7 +26,8 @@
     row-gap: 20px;
     column-gap: 20px;
     /* gap: 20px; */
-    justify-content: space-evenly;
+    justify-content: center; /* horizontally */
+    align-content: center; /* vertically */
 }
 
 .parent div {
@@ -45,5 +46,5 @@
         avoid it, but once there is any constraint it will fill the minimum area
         its element can live in..
         ( By constraint we mean something that has the priority to fill the area
-        like (fr) or justify-content property used! )
+        like (fr) or justify-content property or align content property used! )
 */
