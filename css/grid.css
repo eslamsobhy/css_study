@@ -12,6 +12,7 @@
     Child
     - grid-column: that specific element will take a number of columns => [1 / 5, span 4]
     - grid-row: that specific element will take a number of rows => [1 / 4, span 3]
+    - grid-area: [Grid row start] [Grid column start] [Grid row end] [Grid column end]
 */
 
 * {
@@ -89,10 +90,18 @@ footer {
     text-align: center;
 }
 
-.element {
-    grid-column: span 2;
-    /* grid-row: span 2; */
+
+.parent .element {
+    /* grid-column: span 2; */
+    /* grid-row: span 2; */  
+    background-color: green;
+    /* grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 5;
+    grid-column-end: 6; */
+    grid-area: 2 / 2 / 5 / 6;
 }
+
 
 
 /* 
