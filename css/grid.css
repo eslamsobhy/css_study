@@ -72,13 +72,10 @@ footer {
 
 .parent {
     margin: 20px auto;
-    width: 800px;
     height: 500px;
     background-color: #eee;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    row-gap: 10px;
-    column-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
 }
 
 .parent div {
