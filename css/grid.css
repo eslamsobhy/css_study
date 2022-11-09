@@ -9,6 +9,9 @@
     - gap: [row gap] [column gap]
     - justify-content: [flex-start, flex-end, center, space-between, space-around, space-evenly]
 
+    Child
+    - grid-column: that specific element will take a number of columns => [1 / 5, span 4]
+    - grid-row: that specific element will take a number of rows => [1 / 4, span 3]
 */
 
 * {
@@ -72,13 +75,9 @@ footer {
     height: 500px;
     background-color: #eee;
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(3, auto);
-    row-gap: 20px;
-    column-gap: 20px;
-    /* gap: 20px; */
-    justify-content: center; /* horizontally */
-    align-content: center; /* vertically */
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
 }
 
 .parent div {
@@ -88,6 +87,11 @@ footer {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+}
+
+.element {
+    grid-column: span 2;
+    /* grid-row: span 2; */
 }
 
 
