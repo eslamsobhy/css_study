@@ -7,6 +7,9 @@
     - Medium screens
     - Large screens
     - Future updates
+
+    - Mobile first
+    - Test devices
 */
 
 * {
@@ -17,57 +20,47 @@
 .parent {
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
-    justify-content: space-between;
-    margin: 20px auto;
+    justify-content: space-evenly;
 }
 
-.parent > div {
+.parent > div{
+    padding: 20px;
     background-color: red;
     color: white;
-    text-align: center;
     font-size: 20px;
-    width: 290px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 5px;
 }
 
+/* Mobile first */
 /* Mobile */
 @media (max-width: 767) {
-    .parent > div {
-
-    }
 }
 
 /* Small  screen */
 @media (min-width: 768px) and (max-width: 991px) {
     .parent > div {
-        
+        width: calc(50% - 10px);
     }
 }
 
 /* Medium screens */
 @media (min-width: 992px) {
     .parent > div {
-        
+        width: calc(25% - 5px);
     }
 }
 
 /* Large screens */
 @media (min-width: 1200px) {
-    .parent > div {
-        
-    }
 }
 
 /* X Large screens */
 @media (min-width: 1400px) {
-    .parent > div {
-        
-    }
 }
 
 /* Custom */
 @media (max-width: 1199px) {
-    .parent > div {
-
-    }
 }
