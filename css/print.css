@@ -1,0 +1,4 @@
+.parent > div {
+    font-size: 100px;
+    font-style: italic;
+}
