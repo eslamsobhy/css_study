@@ -1,0 +1,31 @@
+/* 
+    media queries
+    responsive design
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.parent > div {
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    width: 290px;
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+    .parent > div {
+        background-color: blue;
+    }
+}
