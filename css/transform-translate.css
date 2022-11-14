@@ -1,0 +1,17 @@
+.container {
+    width: 250px;
+    height: 250px;
+    background-color: #eee;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .child {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    transition: 0.5s;
+    transform: translate(50px, 50px);
+}
